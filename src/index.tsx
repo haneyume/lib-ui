@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { QuickForm } from './QuickForm';
+import QuickForm from './QuickForm';
 
 import './index.css';
 import './QuickForm.css';

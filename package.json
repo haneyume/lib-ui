@@ -2,7 +2,10 @@
   "name": "quick-form",
   "version": "0.1.0",
   "private": true,
+  "source": "src/QuickForm.tsx",
   "main": "dist/QuickForm.js",
+  "module": "dist/QuickForm.mjs",
+  "unpkg": "dist/QuickForm.umd.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
