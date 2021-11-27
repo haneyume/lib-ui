@@ -11,24 +11,24 @@ export default {
   output: {
     dir: 'dist',
     format: 'esm',
-    preserveModules: true,
-    preserveModulesRoot: 'src',
-    sourcemap: true,
+    // preserveModules: true,
+    // preserveModulesRoot: 'src',
+    // sourcemap: true,
   },
   plugins: [
-    resolve(),
-    commonjs(),
+    // resolve(),
+    // commonjs(),
     typescript({
       tsconfig: './tsconfig.json',
       declaration: true,
       declarationDir: 'dist',
     }),
-    postcss(),
-    terser(),
-    visualizer({
-      filename: 'bundle-analysis.html',
-      open: true,
-    }),
+    // postcss(),
+    // terser(),
+    // visualizer({
+    //   filename: 'bundle-analysis.html',
+    //   open: true,
+    // }),
   ],
   external: ['react', 'react-dom'],
 };
