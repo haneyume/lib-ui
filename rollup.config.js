@@ -10,14 +10,14 @@ export default {
   input: ['./src/QuickForm.tsx'],
   output: {
     dir: 'dist',
-    format: 'esm',
+    // format: 'esm',
     // preserveModules: true,
     // preserveModulesRoot: 'src',
     // sourcemap: true,
   },
   plugins: [
     // resolve(),
-    // commonjs(),
+    commonjs(),
     typescript({
       tsconfig: './tsconfig.json',
       declaration: true,
