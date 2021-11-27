@@ -8,8 +8,8 @@ interface FormFieldProps {
     placeholder?: string;
     required?: boolean;
 }
-declare const QuickForm: <T extends FormFields>({ properties, onSubmit, }: {
+export declare const QuickForm: <T extends FormFields>({ properties, onSubmit, }: {
     properties: Record<keyof T, FormFieldProps>;
     onSubmit: SubmitHandler<T>;
 }) => JSX.Element;
-export default QuickForm;
+export {};

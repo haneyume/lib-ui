@@ -12,7 +12,7 @@ interface FormFieldProps {
   required?: boolean;
 }
 
-const QuickForm = <T extends FormFields>({
+export const QuickForm = <T extends FormFields>({
   properties,
   onSubmit,
 }: {
@@ -50,5 +50,3 @@ const QuickForm = <T extends FormFields>({
     </form>
   );
 };
-
-export default QuickForm;

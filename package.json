@@ -1,12 +1,12 @@
 {
-  "name": "quick-form",
+  "name": "@haneyume/ui-libs",
   "version": "0.1.0",
   "private": true,
-  "source": "src/QuickForm.tsx",
-  "types": "dist/QuickForm.d.ts",
-  "main": "dist/QuickForm.js",
-  "module": "dist/QuickForm.mjs",
-  "unpkg": "dist/QuickForm.umd.js",
+  "source": "src/ui-libs.tsx",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "unpkg": "dist/index.umd.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
