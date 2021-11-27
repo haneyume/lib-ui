@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "source": "src/QuickForm.tsx",
+  "types": "src/QuickForm.d.ts",
   "main": "dist/QuickForm.js",
   "module": "dist/QuickForm.mjs",
   "unpkg": "dist/QuickForm.umd.js",
