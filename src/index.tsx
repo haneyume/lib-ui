@@ -1,17 +1,41 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import { QuickForm } from './QuickForm';
+
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './QuickForm.css';
+
+const App = () => {
+  return (
+    <div style={{ width: '50%', margin: 'auto' }}>
+      <QuickForm<{
+        email: string;
+        password: string;
+      }>
+        properties={{
+          email: {
+            type: 'email',
+            placeholder: 'Please input email',
+            required: true,
+          },
+          password: {
+            type: 'password',
+            placeholder: 'Please input password',
+            required: true,
+          },
+        }}
+        onSubmit={(data) => {
+          alert(JSON.stringify(data));
+        }}
+      />
+    </div>
+  );
+};
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
